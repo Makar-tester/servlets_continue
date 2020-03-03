@@ -15,6 +15,9 @@ public class ForwardingServlet extends HttpServlet {
 
         ServletContext context= getServletContext();
         RequestDispatcher dispatcher = context.getRequestDispatcher("/test");
-        
+
+        System.out.println("Going to forward");
+
+        dispatcher.forward(req, resp);
     }
 }
